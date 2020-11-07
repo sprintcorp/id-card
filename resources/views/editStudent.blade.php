@@ -39,6 +39,9 @@
                                             <input type="text" name="parent_name" value="{{ $student->parent_name }}" placeholder="Parent name" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
+                                            <input type="text" name="address" value="{{ $student->address }}" placeholder="Address" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
                                             <input type="text" name="phone_no" value="{{ $student->phone_no }}" placeholder="Phone number" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">

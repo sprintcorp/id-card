@@ -19,6 +19,7 @@ class StudentResources extends JsonResource
             'Admission_no' => $this->admission_no,
             'Parent_no' => $this->parent_no,
             'Class' => $this->class,
+            'Address' => $this->adddress,
             'Signature' => \env('APP_URL').'/'.$this->signature,
             'Passport' => \env('APP_URL').'/'.$this->image,
             'Parent_name' => $this->parent_name,

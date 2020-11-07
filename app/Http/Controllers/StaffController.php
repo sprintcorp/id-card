@@ -61,6 +61,8 @@ class StaffController extends Controller
         $staff->class = $request['class'];
         $staff->address = $request['address'];
         $staff->phone = $request['phone'];
+        $staff->department = $request['department'];
+        $staff->designation = $request['designation'];
         $upload = new Fileupload();
         if ($request->has('signature')){
             $response = $upload->upload($request->file('signature'),'signature');
@@ -117,6 +119,8 @@ class StaffController extends Controller
         $staff->class = $request['class'];
         $staff->address = $request['address'];
         $staff->phone = $request['phone'];
+        $staff->department = $request['department'];
+        $staff->designation = $request['designation'];
         $upload = new Fileupload();
         if ($request->has('signature')){
             $response = $upload->upload($request->file('signature'),'signature');

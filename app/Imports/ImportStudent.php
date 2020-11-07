@@ -30,7 +30,8 @@ class ImportStudent implements ToModel,WithStartRow
             'admission_no'=>$row[1],
             'class'=>$row[2],
             'parent_name'=>$row[3],
-            'phone_no'=>$row[4]
+            'phone_no'=>$row[4],
+            'address' => $row[5],
         ]);
     }
 

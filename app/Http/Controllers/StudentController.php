@@ -55,6 +55,7 @@ class StudentController extends Controller
         $student->admission_no = $request['admission_no'];
         $student->class = $request['class'];
         $student->parent_name = $request['parent_name'];
+        $student->address = $request['address'];
         $student->phone_no = $request['phone_no'];
         $upload = new Fileupload();
         if ($request->has('signature')){
@@ -112,6 +113,7 @@ class StudentController extends Controller
         $student->class = $request['class'];
         $student->parent_name = $request['parent_name'];
         $student->phone_no = $request['phone_no'];
+        $student->address = $request['address'];
         $upload = new Fileupload();
         if ($request->has('signature')){
             $response = $upload->upload($request->file('signature'),'signature');

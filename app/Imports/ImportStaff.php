@@ -28,7 +28,9 @@ class ImportStaff implements ToModel,WithStartRow
             'staff_id'=>$row[1],
             'class'=>$row[2],
             'address'=>$row[3],
-            'phone'=>$row[4]
+            'phone'=>$row[4],
+            'department'=>$row[5],
+            'designation'=>$row[6]
         ]);
     }
 }

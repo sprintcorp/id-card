@@ -42,6 +42,12 @@
                                         <div class="col-md-12 mb-3">  
                                             <input type="text" name="phone" placeholder="Phone number" class="form-control">
                                         </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="designation" placeholder="Designation" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="department" placeholder="Department" class="form-control">
+                                        </div>
                                         <div class="col-md-12 mb-3">
                                         <label>Signature</label>  
                                             <input type="file" name="signature" placeholder="Signature" class="form-control">

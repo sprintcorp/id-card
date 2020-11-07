@@ -39,6 +39,12 @@
                                             <input type="text" name="address" value="{{ $staff->address }}" placeholder="Address" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
+                                            <input type="text" name="designation" value="{{ $staff->designation }}" placeholder="Designation" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="department" value="{{ $staff->department }}" placeholder="Department" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
                                             <input type="text" name="phone" value="{{ $staff->phone }}" placeholder="Phone number" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">

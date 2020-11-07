@@ -20,6 +20,7 @@ class CreateStudentsTable extends Migration
             $table->string('class');
             $table->string('parent_name');
             $table->bigInteger('phone_no');
+            $table->string('address');
             $table->string('image')->nullable();
             $table->string('signature')->nullable();
             $table->timestamps();   

@@ -18,8 +18,10 @@ class CreateStaffsTable extends Migration
             $table->string('name');
             $table->string('staff_id');
             $table->string('class');
-            $table->string('phone');
             $table->string('address');
+            $table->string('phone');
+            $table->string('department');
+            $table->string('designation');
             $table->string('image')->nullable();
             $table->string('signature')->nullable();
             $table->timestamps();

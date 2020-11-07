@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use App\Service\Fileupload;
 use Illuminate\Http\Request;
 use App\Imports\ImportStudent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Database\QueryException;
-use App\Service\Fileupload;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class StudentController extends Controller
 {
@@ -44,6 +45,7 @@ class StudentController extends Controller
         }catch(QueryException  $queryException){
             return $queryException;
         }
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 
@@ -70,6 +72,7 @@ class StudentController extends Controller
             $student->image = $response;
         }
         $student->save();
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 
@@ -125,6 +128,7 @@ class StudentController extends Controller
             $student->image = $response;
         }
         $student->save();
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 
@@ -143,6 +147,7 @@ class StudentController extends Controller
             if (!empty($student->signature)) {
                 unlink($student->signature);
             }
+            Alert::success('Success', 'Action Successful');
             return back();
     }
 }

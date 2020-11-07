@@ -181,7 +181,7 @@
 
     </script>
  
-{{-- @include('sweetalert::alert') --}}
+@include('sweetalert::alert')
 </body>
 
 <!-- Mirrored from designreset.com/cork/ltr/demo6/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Sep 2020 07:08:30 GMT -->

@@ -49,6 +49,7 @@ class StaffController extends Controller
             }catch(QueryException  $queryException){
                 return $queryException;
             }
+            Alert::success('Success', 'Action Successful');
             return back();
     }
 
@@ -75,6 +76,7 @@ class StaffController extends Controller
             $staff->image = $response;
         }
         $staff->save();
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 
@@ -130,6 +132,7 @@ class StaffController extends Controller
             $staff->image = $response;
         }
         $staff->save();
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 
@@ -148,6 +151,7 @@ class StaffController extends Controller
         if (!empty($staff->signature)) {
             unlink($staff->signature);
         }
+        Alert::success('Success', 'Action Successful');
         return back();
     }
 }

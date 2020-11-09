@@ -28,7 +28,10 @@
                                     @csrf
                                     <div class="row">
                                         <div class="col-md-12 mb-3">  
-                                            <input type="text" name="name" placeholder="Student name" class="form-control">
+                                            <input type="text" name="firstname" placeholder="First name" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="secondname" placeholder="Second name" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
                                             <input type="text" name="admission_no" placeholder="Admission number" class="form-control">
@@ -37,7 +40,7 @@
                                             <input type="text" name="class" placeholder="Class" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
-                                            <input type="text" name="parent_name" placeholder="Parent name" class="form-control">
+                                            <input type="text" name="surname" placeholder="Parent name" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
                                             <input type="text" name="phone_no" placeholder="Phone number" class="form-control">

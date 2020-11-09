@@ -27,7 +27,10 @@
                                     @method('PATCH')
                                     <div class="row">
                                         <div class="col-md-12 mb-3">  
-                                            <input type="text" name="name" value="{{ $staff->name }}" placeholder="staff name" class="form-control">
+                                            <input type="text" name="firstname" placeholder="First name" value="{{ $staff->firstname }}" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="lastname" placeholder="Last name" value="{{ $staff->lastname }}" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
                                             <input type="text" name="staff_id" value="{{ $staff->staff_id }}" placeholder="Staff ID" class="form-control">

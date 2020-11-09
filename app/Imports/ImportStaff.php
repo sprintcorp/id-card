@@ -24,13 +24,14 @@ class ImportStaff implements ToModel,WithStartRow
     public function model(array $row)
     {
         return new Staff([
-            'name'=>$row[0],
-            'staff_id'=>$row[1],
-            'class'=>$row[2],
-            'address'=>$row[3],
-            'phone'=>$row[4],
-            'department'=>$row[5],
-            'designation'=>$row[6]
+            'firstname'=>$row[0],
+            'lastname'=>$row[1],
+            'staff_id'=>$row[2],
+            'class'=>$row[3],
+            'address'=>$row[4],
+            'phone'=>$row[5],
+            'department'=>$row[6],
+            'designation'=>$row[7]
         ]);
     }
 }

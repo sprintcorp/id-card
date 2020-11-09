@@ -114,7 +114,8 @@ class StaffController extends Controller
      */
     public function update(Request $request, Staff $staff)
     {
-        $staff->name = $request['name'];
+        $staff->firstname = $request['firstname'];
+        $staff->lastname = $request['lastname'];
         $staff->staff_id = $request['staff_id'];
         $staff->class = $request['class'];
         $staff->address = $request['address'];

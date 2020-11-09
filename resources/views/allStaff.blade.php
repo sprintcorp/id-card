@@ -39,7 +39,7 @@
                                     <tbody>
                                     @foreach ($staffs as $staff)
                                         <tr>
-                                            <td>{{ $staff->name }}</td>
+                                            <td>{{ $staff->firstname }} {{ $staff->lastname }}</td>
                                             <td>{{ $staff->staff_id }}</td>
                                             <td> {{ $staff->phone }}</td>
                                             <td>{{ $staff->class }}</td>

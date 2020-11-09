@@ -28,7 +28,10 @@
                                     @csrf
                                     <div class="row">
                                         <div class="col-md-12 mb-3">  
-                                            <input type="text" name="name" placeholder="Staff name" class="form-control">
+                                            <input type="text" name="firstname" placeholder="First name" class="form-control">
+                                        </div>
+                                        <div class="col-md-12 mb-3">  
+                                            <input type="text" name="lastname" placeholder="Last name" class="form-control">
                                         </div>
                                         <div class="col-md-12 mb-3">  
                                             <input type="text" name="staff_id" placeholder="Staff ID" class="form-control">

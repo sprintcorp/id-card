@@ -15,14 +15,15 @@ class StudentResources extends JsonResource
     public function toArray($request)
     {
         return [
-            'Name' => $this->name,
+            'Firstname' => $this->firstname,
+            'Secondname' => $this->secondname,
             'Admission_no' => $this->admission_no,
             'Parent_no' => $this->parent_no,
             'Class' => $this->class,
             'Address' => $this->adddress,
             'Signature' => \env('APP_URL').'/'.$this->signature,
             'Passport' => \env('APP_URL').'/'.$this->image,
-            'Parent_name' => $this->parent_name,
+            'Surname' => $this->surname,
             'Year' => $this->created_at->format('Y'),
         ];
     }

@@ -51,10 +51,11 @@ class StudentController extends Controller
 
     public function save(Request $request){
         $student = new Student();
-        $student->name = $request['name'];
+        $student->firstname = $request['firstname'];
+        $student->secondname = $request['secondname'];
         $student->admission_no = $request['admission_no'];
         $student->class = $request['class'];
-        $student->parent_name = $request['parent_name'];
+        $student->surname = $request['surname'];
         $student->address = $request['address'];
         $student->phone_no = $request['phone_no'];
         $upload = new Fileupload();
@@ -108,10 +109,11 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        $student->name = $request['name'];
+        $student->firstname = $request['firstname'];
+        $student->secondname = $request['secondname'];
         $student->admission_no = $request['admission_no'];
         $student->class = $request['class'];
-        $student->parent_name = $request['parent_name'];
+        $student->surname = $request['surname'];
         $student->phone_no = $request['phone_no'];
         $student->address = $request['address'];
         $upload = new Fileupload();

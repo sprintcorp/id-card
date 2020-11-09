@@ -26,12 +26,13 @@ class ImportStudent implements ToModel,WithStartRow
     public function model(array $row)
     {
         return new Student([
-            'name'=>$row[0],
-            'admission_no'=>$row[1],
-            'class'=>$row[2],
-            'parent_name'=>$row[3],
-            'phone_no'=>$row[4],
-            'address' => $row[5],
+            'firstname'=>$row[0],
+            'secondname'=>$row[1],
+            'admission_no'=>$row[2],
+            'class'=>$row[3],
+            'surname'=>$row[4],
+            'phone_no'=>$row[5],
+            'address' => $row[6],
         ]);
     }
 

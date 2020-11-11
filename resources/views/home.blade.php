@@ -41,7 +41,7 @@
                                         <tr>
                                             <td>{{ $student->firstname }} {{ $student->surname }}</td>
                                             <td>{{ $student->admission_no }}</td>
-                                            <td> {{ $student->parent_name }}</td>
+                                            <td> {{ $student->surname }}</td>
                                             <td>{{ $student->class }}</td>
                                             <td><img src="{{ $student->image }}" width="70" height="70"/> </td>
                                             {{-- <td>{{ $student->signature }} </td> --}}

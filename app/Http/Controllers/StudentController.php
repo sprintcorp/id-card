@@ -77,9 +77,13 @@ class StudentController extends Controller
             }
             $student->image = $response;
         }
-        $student->save();
-        Alert::success('Success', 'Action Successful');
-        return back();
+        try {
+            $student->save();
+            Alert::success('Success', 'Action Successful');
+            return back();
+        }catch(QueryException $queryException){
+            return $queryException->getMessage();
+        }
     }
 
     /**
@@ -135,9 +139,13 @@ class StudentController extends Controller
             }
             $student->image = $response;
         }
-        $student->save();
-        Alert::success('Success', 'Action Successful');
-        return back();
+        try {
+            $student->save();
+            Alert::success('Success', 'Action Successful');
+            return back();
+        }catch(QueryException $queryException){
+            return $queryException->getMessage();
+        }
     }
 
     /**

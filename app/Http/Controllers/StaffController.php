@@ -82,9 +82,13 @@ class StaffController extends Controller
             }
             $staff->image = $response;
         }
-        $staff->save();
-        Alert::success('Success', 'Action Successful');
-        return back();
+        try {
+            $staff->save();
+            Alert::success('Success', 'Action Successful');
+            return back();
+        }catch(QueryException $queryException){
+            return $queryException->getMessage();
+        }
     }
 
     /**
@@ -141,9 +145,13 @@ class StaffController extends Controller
             }
             $staff->image = $response;
         }
-        $staff->save();
-        Alert::success('Success', 'Action Successful');
-        return back();
+        try {
+            $staff->save();
+            Alert::success('Success', 'Action Successful');
+            return back();
+        }catch(QueryException $queryException){
+            return $queryException->getMessage();
+        }
     }
 
     /**

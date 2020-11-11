@@ -39,7 +39,7 @@ class ImportStaff implements ToModel,WithStartRow,WithValidation
     public function rules(): array
     {
         return [
-            '2' => 'unique:staff_id',
+            'staff_id' => 'unique',
         ];
     }
 }

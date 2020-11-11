@@ -29,7 +29,8 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('student');
+        $message = '';
+        return view('student',compact('message'));
     }
 
     /**

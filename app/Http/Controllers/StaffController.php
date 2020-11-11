@@ -30,7 +30,9 @@ class StaffController extends Controller
      */
     public function create()
     {
-        return view('staff');
+        $message = '';
+        return view('staff',compact('message'));
+            
     }
 
     public function staff(){

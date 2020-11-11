@@ -17,7 +17,7 @@ class CreateStudentsTable extends Migration
             $table->id();
             $table->string('firstname');
             $table->string('secondname');
-            $table->string('admission_no');
+            $table->string('admission_no')->unique();
             $table->string('class');
             $table->string('surname');
             $table->bigInteger('phone_no');

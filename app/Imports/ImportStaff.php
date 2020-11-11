@@ -5,8 +5,9 @@ namespace App\Imports;
 use App\Staff;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithStartRow;
+use Maatwebsite\Excel\Concerns\WithValidation;
 
-class ImportStaff implements ToModel,WithStartRow
+class ImportStaff implements ToModel,WithStartRow,WithValidation
 {
     /**
      * @return int
@@ -33,5 +34,12 @@ class ImportStaff implements ToModel,WithStartRow
             'department'=>$row[6],
             'designation'=>$row[7]
         ]);
+    }
+
+    public function rules(): array
+    {
+        return [
+            '2' => 'unique:staff_id',
+        ];
     }
 }

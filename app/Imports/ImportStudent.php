@@ -5,9 +5,11 @@ namespace App\Imports;
 use App\Student;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithStartRow;
-
-class ImportStudent implements ToModel,WithStartRow
+use Maatwebsite\Excel\Concerns\WithValidation;
+use Maatwebsite\Excel\Concerns\Importable;
+class ImportStudent implements ToModel,WithStartRow,WithValidation
 {
+    use Importable;
 
     /**
      * @return int
@@ -34,6 +36,20 @@ class ImportStudent implements ToModel,WithStartRow
             'phone_no'=>$row[5],
             'address' => $row[6],
         ]);
+    }
+
+    public function rules(): array
+    {
+        return [
+            'admission_no' => 'unique'
+        ];
+    }
+
+    public function customValidationMessages()
+    {
+        return [
+            'admission_no' => 'Admission number already exist',
+        ];
     }
 
     

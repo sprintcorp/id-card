@@ -15,7 +15,7 @@ class StaffApiController extends Controller
      */
     public function index()
     {
-        $staff = Staff::all();
+        $staff = Staff::whereNotNull('image')->whereNotNull('signature')->get();
         return response()->json(StaffResources::collection($staff));
     }
 

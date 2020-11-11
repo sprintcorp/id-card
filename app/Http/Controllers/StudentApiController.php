@@ -15,7 +15,7 @@ class StudentApiController extends Controller
      */
     public function index()
     {
-        $student = Student::all();
+        $student = Student::whereNotNull('image')->whereNotNull('signature')->get();
         return response()->json(StudentResources::collection($student));
     }
 

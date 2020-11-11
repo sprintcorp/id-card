@@ -43,7 +43,10 @@ class StudentController extends Controller
         try{
         Excel::import(new ImportStudent,$request->file('file'));
         }catch(QueryException  $queryException){
-            return $queryException;
+            
+            $message = $queryException->getMessage();
+            return view('student',compact('message'));
+            
         }
         Alert::success('Success', 'Action Successful');
         return back();

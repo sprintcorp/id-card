@@ -48,7 +48,8 @@ class StaffController extends Controller
         try{
             Excel::import(new ImportStaff,$request->file('file'));
             }catch(QueryException  $queryException){
-                return $queryException;
+                $message = $queryException->getMessage();
+            return view('staff',compact('message'));
             }
             Alert::success('Success', 'Action Successful');
             return back();

@@ -18,6 +18,9 @@
                 <div class="row layout-top-spacing" style="text-align:right;margin-left:20px">
                     <a href="{{ route('staffs.index') }}"><button class="btn btn-info">Upload staff csv file</button></a>
                 </div>
+                @if($message)
+       <div class="card p-3" style="margin-top:10px;background-color:red;color:white"> {{ $message }}</div>
+    @endif
                  <div class="row layout-top-spacing">
                 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">

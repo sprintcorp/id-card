@@ -17,7 +17,7 @@ class CreateStaffsTable extends Migration
             $table->id();
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('staff_id');
+            $table->string('staff_id')->unique();
             $table->string('class');
             $table->string('address');
             $table->string('phone');

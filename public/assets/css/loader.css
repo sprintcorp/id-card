@@ -1,6 +1,6 @@
 div#load_screen {
     /* background: rgb(236, 239, 255); */
-    background-image: url("../../images/logo.jpeg") center center / cover no-repeat;
+    background-image: url("../../images/logo.png") center center / cover no-repeat;
     opacity: 1;
     position: fixed;
     z-index: 999999;

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>ID Card - Admin Dashboard</title>
+    <title>Adeyemi Demonstration Model</title>
     <link rel="icon" type="image/x-icon" href="{{ URL::asset('images/logo.png')}}"/>
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
     {{-- <script src="assets/js/loader.js"></script> --}}

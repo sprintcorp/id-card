@@ -1051,8 +1051,8 @@ code {
 }
 
 .sidebar-wrapper .profile-info figure {
-    width: 100%;
-    height: 82px;
+    width: 60%;
+    height: 50px;
     background: url("../../images/logo.png") center center / cover no-repeat;
     margin-bottom: 0;
 }
